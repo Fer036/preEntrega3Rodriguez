@@ -28,6 +28,14 @@ body {
     }
 }
 
+p {
+    text-align: justify;
+}
+
 .btn {
     color: nth($color, 4) !important;
+}
+
+.pag-titulo {
+    color: nth($color, 5);
 }

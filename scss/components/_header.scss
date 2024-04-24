@@ -2,28 +2,21 @@ nav {
     background-color: nth($color, 2);
     @extend%font-bebas;
     font-size: nth($font-size, 3);
-
     div {
-        /* Logo */
         a {
             img {
                 width: 3rem;
                 height: auto;
             }
         }
-
-        /* Secciones */
         div {
             ul {
                 li {
                     width: 7rem;
                     height: auto;
-                    &:active {
-                        border-radius: 10%;
-                        box-shadow: $shadow-2;
-                    }
+
                     a {
-                        color: nth($color, 5) !important;  
+                        color: nth($color, 5) !important;
                         &:hover {
                             color: nth($color, 6) !important;
                         }

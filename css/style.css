@@ -40,7 +40,7 @@
 
 /*Barra de navegación y footer - Bootstrap */
 /* .navbar, */
-footer {
+/* footer {
     background-color: var(--color-graydark);
 
     font-family: "Bebas Neue", sans-serif;
@@ -48,13 +48,13 @@ footer {
     font-style: normal;
 
     font-size: 1.3rem;
-}
+} */
 
-footer {
+/* footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-}
+} */
 
 /* .nav-img {
     width: 3rem;
@@ -109,9 +109,9 @@ footer {
 }
 
 /* Página ¿Quién soy? - Bootstrap*/
-.pag-titulo {
+/* .pag-titulo {
     color: var(--color-brown);
-}
+} */
 
 .contenedor-about {
     color: var(--color-graylight);
@@ -123,9 +123,9 @@ footer {
     box-shadow: -3px -3px 7px rgb(59, 59, 59), 3px 3px 5px var(--color-dark);
 }
 
-p {
+/* p {
     text-align: justify;
-}
+} */
 
 /* Skills - FlexBox */
 .contenedor-skills {
@@ -287,30 +287,23 @@ iframe {
 }
 
 /* Elementos responsive*/
-@media screen and (max-width: 992px) {
-    /* Inicio */
+/* @media screen and (max-width: 992px) {
     .contenedor-grid {
         padding-bottom: 6rem;
     }
-    /* Footer */
     footer {
         width: 100%;
     }
-
-    /* Sobre mi */
     .sobre-mi {
         padding-bottom: 7rem;
     }
-
-    /* Portfolio */
     .contenedor-portfolio {
         padding-bottom: 10rem;
     }
-}
+}*/ 
 
-@media (min-width: 576px) and (max-width: 992px) {
+/* @media (min-width: 576px) and (max-width: 992px) {
 
-    /* Inicio */
     .contenedor-grid {
         grid-auto-rows: auto;
         grid-template-columns: 1fr;
@@ -333,7 +326,6 @@ iframe {
         height: auto;
     }
 
-    /*Skills*/
     .contenedor-skills {
         width: auto;
         height: auto;
@@ -368,14 +360,13 @@ iframe {
         stroke-dashoffset: 10px;
     }
 
-    /* Contacto */
     .contenedor-contacto {
         grid-template-columns: 1fr;
         grid-auto-rows: 1fr 1fr;
     }
 }
-
-@media (max-width: 695px) {
+ */
+/* @media (max-width: 695px) {
     .nav-img {
         width: 2rem;
         height: auto;
@@ -402,16 +393,12 @@ iframe {
         width: 20rem;
         height: auto;
     }
-
-    /*Portfolio*/
     .card-portfolio {
         padding-bottom: 10rem;
     }
-}
+} */
 
-@media screen and (min-width: 381px) and (max-width: 575px) {
-
-    /*Skills*/
+/* @media screen and (min-width: 381px) and (max-width: 575px) {
     .contenedor-skills {
         width: auto;
         height: auto;
@@ -445,8 +432,6 @@ iframe {
         stroke-dasharray: 140px;
         stroke-dashoffset: 10px;
     }
-
-    /* Contacto */
     .contenedor-contacto {
         width: auto;
         margin: auto;
@@ -459,11 +444,9 @@ iframe {
         max-width: 24rem;
         margin: .5;
     }
-}
+} */
 
-@media screen and (max-width: 380px) {
-
-    /*Skills*/
+/* @media screen and (max-width: 380px) {
     .contenedor-skills {
         width: auto;
         height: auto;
@@ -499,8 +482,6 @@ iframe {
         stroke-dashoffset: 0px;
     }
 
-
-    /* Contacto */
     .contenedor-contacto {
         max-width: 100%;
         height: auto;
@@ -521,4 +502,4 @@ iframe {
     .select-contact {
         max-width: 18rem;
     }
-}
+} */

@@ -1,0 +1,222 @@
+@media screen and (max-width: 992px) {
+
+    /* Inicio */
+    .contenedor-index {
+        padding-bottom: 6rem;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+    }
+
+    /* Sobre mi */
+    .sobre-mi {
+        padding-bottom: 7rem;
+    }
+
+    /* Portfolio */
+    .contenedor-portfolio {
+        padding-bottom: 10rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    /* Inicio */
+    .contenedor-index {
+        @include grids(grid, auto, 1fr, 2rem, center, center);
+        padding-top: 2rem;
+    }
+
+    .contenedor-index article span {
+        text-align: center;
+    }
+
+    .contenedor-index article img {
+        transition: all;
+        transition-duration: .5s;
+        width: 30rem;
+        height: auto;
+    }
+
+    /*Skills*/
+    .contenedor-skills {
+        width: auto;
+        height: auto;
+        padding-bottom: 7rem;
+    }
+
+    .contenedor-skills,
+    .contenedor-skills article {
+        margin: nth($margin, 3);
+        font-size: nth($font-size, 2);
+    }
+
+    .skill {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .skill2,
+    .skill3 {
+        stroke-dasharray: 230px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill4 {
+        stroke-dasharray: 250px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill5,
+    .skill6 {
+        stroke-dasharray: 160px;
+        stroke-dashoffset: 10px;
+    }
+
+    /* Contacto */
+    .contenedor-contacto {
+        @include grids(grid, 1fr 1fr, 1fr, 0, center, center)
+    }
+}
+
+@media (max-width: 695px) {
+    nav div a img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .contenedor-index {
+        @include grids (grid, auto, 1fr, 2rem, center, center);
+        padding-top: 4rem;
+    }
+
+    .contenedor-index article span {
+        text-align: center;
+    }
+
+    .contenedor-index article img {
+        transition: all;
+        transition-duration: .5s;
+        width: 20rem;
+        height: auto;
+    }
+
+    /*Portfolio*/
+    .contenedor-portfolio div {
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 575px) {
+
+    /*Skills*/
+    .contenedor-skills {
+        width: auto;
+        height: auto;
+        padding-bottom: 7rem;
+    }
+
+    .contenedor-skills,
+    .contenedor-skills article {
+        margin: nth($margin, 3);
+        font-size: nth($font-size, 1);
+    }
+
+    .skill {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .skill2,
+    .skill3 {
+        stroke-dasharray: 200px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill4 {
+        stroke-dasharray: 220px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill5,
+    .skill6 {
+        stroke-dasharray: 140px;
+        stroke-dashoffset: 10px;
+    }
+
+    /* Contacto */
+    .contenedor-contacto {
+        width: auto;
+        margin: auto;
+        @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
+    }
+
+    .contacto-form,
+    .contacto-mapa {
+        max-width: 24rem;
+        margin: nth($margin, 1);
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    /*Skills*/
+    .contenedor-skills {
+        width: auto;
+        height: auto;
+        padding-bottom: 7rem;
+    }
+
+    .contenedor-skills,
+    .contenedor-skills article {
+        margin: nth($margin, 3);
+        font-size: nth(font-size, 1);
+    }
+
+    .skill {
+        height: 4rem;
+        width: 4rem;
+    }
+
+
+    .skill2,
+    .skill3 {
+        stroke-dasharray: 180px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill4 {
+        stroke-dasharray: 190px;
+        stroke-dashoffset: 10px;
+    }
+
+    .skill5,
+    .skill6 {
+        stroke-dasharray: 100px;
+        stroke-dashoffset: 0px;
+    }
+
+
+    /* Contacto */
+    .contenedor-contacto {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
+    }
+
+    .contacto-form,
+    .contacto-mapa {
+        max-width: 80%;
+        margin: nth($margin, 1);
+    }
+
+    input,
+    textarea,
+    label,
+    .select-medio {
+        max-width: 18rem;
+    }
+}
