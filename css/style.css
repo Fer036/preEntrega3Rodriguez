@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap rel="stylesheet');
 
 /* Reseteo */
@@ -11,14 +11,14 @@
 } */
 
 /* Declaración de colores */
-:root {
+/* :root {
     --color-dark: #070B0E;
     --color-graydark: #353A40;
     --color-graymed: #656C72;
     --color-graylight: #B9BDC0;
     --color-brown: #A6805C;
 }
-
+ */
 /* Formato general */
 /* body {
     height: 98vh;
@@ -28,9 +28,9 @@
     background: linear-gradient(90deg, rgba(7, 11, 14, 1) 0%, rgba(53, 58, 64, 1) 100%);
 
     overflow-x: hidden;
-}
+} */
 
-main {
+/* main {
     font-family: "Tilt Neon", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -39,7 +39,7 @@ main {
 
 
 /*Barra de navegación y footer - Bootstrap */
-.navbar,
+/* .navbar, */
 footer {
     background-color: var(--color-graydark);
 
@@ -56,31 +56,31 @@ footer {
     bottom: 0;
 }
 
-.nav-img {
+/* .nav-img {
     width: 3rem;
     height: auto;
-}
+} */
 
-#nav-link,
+/* #nav-link,
 .btn {
     color: var(--color-graylight) !important;
-}
+} */
 
-.nav-item {
+/* .nav-item {
     width: 7rem;
     height: auto;
-}
+} */
 
-.nav-item:active {
+/* .nav-item:active {
     border-radius: 10%;
     box-shadow: 6px 5px 8px #0000008c inset;
-}
+} */
 
-.btn:hover,
+/* .btn:hover,
 #nav-link:hover {
     color: var(--color-brown) !important;
 }
-
+ */
 /* Contenido página de inicio - Grid */
 .contenedor-grid {
     display: grid;

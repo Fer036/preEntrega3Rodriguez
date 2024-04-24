@@ -1,0 +1,65 @@
+/* Variables */
+
+/* Color (lista) */
+$color:
+#070b0e,
+#0e0f16,
+#4b6382,
+#656c72,
+#a68868,
+#e3c39d;
+
+/* Tipo de fuente (extend) */
+%font-tilt {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Tamaño de fuente (lista)*/
+$font-size:
+0.7rem,
+1rem,
+1.3rem;
+
+/* Margin (lista) */
+$margin:
+0.5rem,
+1rem,
+2rem,
+3rem;
+
+
+/* Flexbox (mixin) */
+@mixin flexbox($flex, $justify, $align, $wrap, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+
+/* Grid (mixin) */
+@mixin grids($grid, $row, $column, $gap, $justify, $align) {
+    display: $grid;
+    grid-auto-rows: $row;
+    grid-template-columns: $column;
+    gap: $gap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* Box-shadow (individual) */
+$shadow-1:
+-3px -3px 7px rgb(59, 59, 59), 3px 3px 5px rgb(12, 12, 12);
+
+$shadow-2:
+inset -3px -3px 7px rgb(29, 29, 29), inset 3px 3px 5px rgb(0, 0, 0);

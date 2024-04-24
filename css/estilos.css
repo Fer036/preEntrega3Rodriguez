@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Variables */
+/* Color (lista) */
+/* Tipo de fuente (extend) */
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap rel="stylesheet');
+nav {
+  font-family: "Bebas Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+
+/* Tamaño de fuente (lista)*/
+/* Margin (lista) */
+/* Flexbox (mixin) */
+/* Grid (mixin) */
+/* Box-shadow (individual) */
+/* Reseteo */
+* {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  box-sizing: border-box; }
+
+body {
+  height: 98vh;
+  width: 100%;
+  background: #070b0e;
+  background: linear-gradient(90deg, #090a13 0%, #222c36 100%);
+  overflow-x: hidden; }
+  body main {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; }
+
+.btn {
+  color: #656c72 !important; }
+
+nav {
+  background-color: #0e0f16;
+  font-size: 1.3rem; }
+  nav div {
+    /* Logo */
+    /* Secciones */ }
+    nav div a img {
+      width: 3rem;
+      height: auto; }
+    nav div div ul li {
+      width: 7rem;
+      height: auto; }
+      nav div div ul li:active {
+        border-radius: 10%;
+        box-shadow: inset -3px -3px 7px #1d1d1d, inset 3px 3px 5px black; }
+      nav div div ul li a {
+        color: #a68868 !important; }
+        nav div div ul li a:hover {
+          color: #e3c39d !important; }
