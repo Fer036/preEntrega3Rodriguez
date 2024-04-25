@@ -46,7 +46,8 @@ p {
   transform: scale(1.2); }
 
 .pag-titulo {
-  color: #a68868; }
+  color: #a68868;
+  text-align: center; }
 
 nav {
   background-color: #353A40;
@@ -106,6 +107,71 @@ nav {
       position: relative;
       max-width: 18rem;
       height: auto; }
+
+.contenedor-skills {
+  padding-bottom: 7rem;
+  margin: 2rem;
+  text-align: center; }
+  .contenedor-skills article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin: 3rem; }
+    .contenedor-skills article div span {
+      color: #B9BDC0; }
+    .contenedor-skills article div .skill {
+      height: 8rem;
+      width: 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 1rem 3rem 1rem 3rem;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c;
+      overflow: hidden; }
+      .contenedor-skills article div .skill::after {
+        content: "";
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        box-shadow: inset -3px -3px 7px #1d1d1d, inset 3px 3px 5px black;
+        background: #070b0e;
+        background: linear-gradient(90deg, #070b0e 0%, #2c3035 100%);
+        transform: translate(-50% -50%); }
+      .contenedor-skills article div .skill svg {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contenedor-skills article div .skill svg circle {
+          position: absolute;
+          transform: scale(0.8);
+          transform-origin: center;
+          stroke: #a68868;
+          stroke-width: .85rem; }
+        .contenedor-skills article div .skill svg .skill2,
+        .contenedor-skills article div .skill svg .skill3 {
+          stroke-dasharray: 280px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills article div .skill svg .skill4 {
+          stroke-dasharray: 300px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills article div .skill svg .skill5,
+        .contenedor-skills article div .skill svg .skill6 {
+          stroke-dasharray: 200px;
+          stroke-dashoffset: 300px; }
+
+.contenedor-portfolio {
+  padding-bottom: 7rem; }
+  .contenedor-portfolio div .card {
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
 
 footer {
   background-color: #353A40;
@@ -202,10 +268,7 @@ footer {
         transition: all;
         transition-duration: .5s;
         width: 20rem;
-        height: auto; }
-  /*Portfolio*/
-  .contenedor-portfolio div {
-    padding-bottom: 10rem; } }
+        height: auto; } }
 
 @media screen and (min-width: 381px) and (max-width: 575px) {
   /*Skills*/

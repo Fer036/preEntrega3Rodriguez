@@ -1,0 +1,80 @@
+.contenedor-skills {
+    padding-bottom: 7rem;
+    margin: nth($margin, 3);
+    text-align: center;
+
+    article {
+        @include flexbox(flex, center, center, wrap, row);
+
+        height: auto;
+        width: auto;
+
+        margin: nth($margin, 4);
+
+        div {
+            span {
+                color: nth($color, 4);
+            }
+
+            .skill {
+                height: 8rem;
+                width: 8rem;
+
+                @include flexbox(flex, center, center, wrap, row);
+                margin: nth($margin, 5);
+                position: relative;
+                border-radius: 50%;
+                box-shadow: $shadow-1;
+                overflow: hidden;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 80%;
+                    width: 80%;
+
+                    border-radius: 50%;
+                    box-shadow: $shadow-2;
+                    background: rgb(7, 11, 14);
+                    background: linear-gradient(90deg, rgba(7, 11, 14, 1) 0%, rgb(44, 48, 53) 100%);
+
+                    transform: translate(-50% -50%);
+
+                }
+
+                svg {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    circle {
+                        position: absolute;
+                        transform: scale(0.8);
+                        transform-origin: center;
+
+                        stroke: nth($color, 5);
+                        stroke-width: .85rem;
+                    }
+
+                    .skill2,
+                    .skill3 {
+                        stroke-dasharray: 280px;
+                        stroke-dashoffset: 10px;
+                    }
+
+                    .skill4 {
+                        stroke-dasharray: 300px;
+                        stroke-dashoffset: 10px;
+                    }
+
+                    .skill5,
+                    .skill6 {
+                        stroke-dasharray: 200px;
+                        stroke-dashoffset: 300px;
+                    }
+                }
+
+            }
+        }
+    }
+}
