@@ -1,0 +1,33 @@
+.sobre-mi {
+    .sobre-mi-texto {
+        color: nth($color, 4);
+
+        .sobre-mi-desc {
+            box-shadow: $shadow-1;
+        }
+
+        .sobre-mi-obj {
+            box-shadow: $shadow-1;
+        }
+    }
+
+    .sobre-mi-img {
+        @include flexbox(flex, center, center, wrap, row);
+        padding-bottom: 7rem;
+        margin: auto;
+        article {
+            width: 20rem;
+            height: 20rem;
+            padding: 1rem;
+            margin: nth($margin,3);
+            box-shadow: $shadow-1;
+            img {
+                position: relative;
+                max-width: 18rem;
+                height: auto;
+            }
+        }
+    }
+
+
+}

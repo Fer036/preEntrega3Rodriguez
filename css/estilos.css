@@ -27,7 +27,7 @@ body {
   height: 98vh;
   width: 100%;
   background: #070b0e;
-  background: linear-gradient(90deg, #090a13 0%, #222c36 100%);
+  background: linear-gradient(90deg, #070b0e 0%, #353a40 100%);
   overflow-x: hidden; }
   body main {
     font-family: "Tilt Neon", sans-serif;
@@ -40,6 +40,10 @@ p {
 
 .btn {
   color: #B9BDC0 !important; }
+
+.btn:hover {
+  color: #e3c39d !important;
+  transform: scale(1.2); }
 
 .pag-titulo {
   color: #a68868; }
@@ -54,9 +58,54 @@ nav {
     width: 7rem;
     height: auto; }
     nav div div ul li a {
-      color: #a68868 !important; }
+      color: #B9BDC0 !important; }
       nav div div ul li a:hover {
         color: #e3c39d !important; }
+
+.contenedor-index {
+  display: grid;
+  grid-auto-rows: 45rem;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 4rem;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-index article span {
+    text-align: end; }
+    .contenedor-index article span h1 {
+      color: #6282a0; }
+    .contenedor-index article span h3 {
+      color: #656C72; }
+    .contenedor-index article span h4 {
+      color: #B9BDC0; }
+  .contenedor-index article img {
+    width: 35rem;
+    height: auto; }
+
+.sobre-mi .sobre-mi-texto {
+  color: #B9BDC0; }
+  .sobre-mi .sobre-mi-texto .sobre-mi-desc {
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
+  .sobre-mi .sobre-mi-texto .sobre-mi-obj {
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
+
+.sobre-mi .sobre-mi-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 7rem;
+  margin: auto; }
+  .sobre-mi .sobre-mi-img article {
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
+    .sobre-mi .sobre-mi-img article img {
+      position: relative;
+      max-width: 18rem;
+      height: auto; }
 
 footer {
   background-color: #353A40;
@@ -89,36 +138,39 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 2rem; }
-  .contenedor-index article span {
-    text-align: center; }
-  .contenedor-index article img {
-    transition: all;
-    transition-duration: .5s;
-    width: 30rem;
-    height: auto; }
+    .contenedor-index article {
+      text-align: center; }
+      .contenedor-index article span {
+        margin: auto;
+        text-align: center; }
+      .contenedor-index article img {
+        margin: auto;
+        transition: all;
+        transition-duration: .5s;
+        width: 30rem;
+        height: auto; }
   /*Skills*/
   .contenedor-skills {
     width: auto;
     height: auto;
     padding-bottom: 7rem; }
-  .contenedor-skills,
-  .contenedor-skills article {
-    margin: 2rem;
-    font-size: 1rem; }
-  .skill {
-    height: 6rem;
-    width: 6rem; }
-  .skill2,
-  .skill3 {
-    stroke-dasharray: 230px;
-    stroke-dashoffset: 10px; }
-  .skill4 {
-    stroke-dasharray: 250px;
-    stroke-dashoffset: 10px; }
-  .skill5,
-  .skill6 {
-    stroke-dasharray: 160px;
-    stroke-dashoffset: 10px; }
+    .contenedor-skills article {
+      margin: 2rem;
+      font-size: 1rem; }
+      .contenedor-skills article div .skill {
+        height: 6rem;
+        width: 6rem; }
+        .contenedor-skills article div .skill svg .skill2,
+        .contenedor-skills article div .skill svg .skill3 {
+          stroke-dasharray: 230px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills article div .skill svg .skill4 {
+          stroke-dasharray: 250px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills article div .skill svg .skill5,
+        .contenedor-skills article div .skill svg .skill6 {
+          stroke-dasharray: 160px;
+          stroke-dashoffset: 10px; }
   /* Contacto */
   .contenedor-contacto {
     display: grid;
@@ -129,9 +181,11 @@ footer {
     align-items: center; } }
 
 @media (max-width: 695px) {
+  /* Navbar */
   nav div a img {
     width: 2rem;
     height: auto; }
+  /* Inicio */
   .contenedor-index {
     display: grid;
     grid-auto-rows: auto;
@@ -140,13 +194,15 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 4rem; }
-  .contenedor-index article span {
-    text-align: center; }
-  .contenedor-index article img {
-    transition: all;
-    transition-duration: .5s;
-    width: 20rem;
-    height: auto; }
+    .contenedor-index article {
+      margin: auto; }
+      .contenedor-index article span {
+        text-align: center; }
+      .contenedor-index article img {
+        transition: all;
+        transition-duration: .5s;
+        width: 20rem;
+        height: auto; }
   /*Portfolio*/
   .contenedor-portfolio div {
     padding-bottom: 10rem; } }
@@ -157,24 +213,23 @@ footer {
     width: auto;
     height: auto;
     padding-bottom: 7rem; }
-  .contenedor-skills,
-  .contenedor-skills article {
-    margin: 2rem;
-    font-size: 0.7rem; }
-  .skill {
-    height: 5rem;
-    width: 5rem; }
-  .skill2,
-  .skill3 {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: 10px; }
-  .skill4 {
-    stroke-dasharray: 220px;
-    stroke-dashoffset: 10px; }
-  .skill5,
-  .skill6 {
-    stroke-dasharray: 140px;
-    stroke-dashoffset: 10px; }
+    .contenedor-skills .contenedor-skills article {
+      margin: 2rem;
+      font-size: 0.7rem; }
+      .contenedor-skills .contenedor-skills article div .skill {
+        height: 5rem;
+        width: 5rem; }
+        .contenedor-skills .contenedor-skills article div .skill svg .skill2,
+        .contenedor-skills .contenedor-skills article div .skill svg .skill3 {
+          stroke-dasharray: 200px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills .contenedor-skills article div .skill svg .skill4 {
+          stroke-dasharray: 220px;
+          stroke-dashoffset: 10px; }
+        .contenedor-skills .contenedor-skills article div .skill svg .skill5,
+        .contenedor-skills .contenedor-skills article div .skill svg .skill6 {
+          stroke-dasharray: 140px;
+          stroke-dashoffset: 10px; }
   /* Contacto */
   .contenedor-contacto {
     width: auto;
@@ -185,35 +240,39 @@ footer {
     gap: 0;
     justify-content: center;
     align-items: center; }
-  .contacto-form,
-  .contacto-mapa {
-    max-width: 24rem;
-    margin: 0.5rem; } }
+    .contenedor-contacto .contacto-form,
+    .contenedor-contacto .contacto-mapa {
+      max-width: 24rem;
+      margin: 0.5rem; } }
 
 @media screen and (max-width: 380px) {
+  /* Inicio */
+  .contenedor-index article span h4 {
+    font-size: 1rem; }
   /*Skills*/
   .contenedor-skills {
     width: auto;
     height: auto;
-    padding-bottom: 7rem; }
-  .contenedor-skills,
-  .contenedor-skills article {
+    padding-bottom: 7rem;
     margin: 2rem;
     font-size: font-size; }
-  .skill {
-    height: 4rem;
-    width: 4rem; }
-  .skill2,
-  .skill3 {
-    stroke-dasharray: 180px;
-    stroke-dashoffset: 10px; }
-  .skill4 {
-    stroke-dasharray: 190px;
-    stroke-dashoffset: 10px; }
-  .skill5,
-  .skill6 {
-    stroke-dasharray: 100px;
-    stroke-dashoffset: 0px; }
+    .contenedor-skills article {
+      margin: 2rem;
+      font-size: font-size; }
+      .contenedor-skills article div .skill svg circle {
+        height: 4rem;
+        width: 4rem; }
+      .contenedor-skills article div .skill svg .skill2,
+      .contenedor-skills article div .skill svg .skill3 {
+        stroke-dasharray: 180px;
+        stroke-dashoffset: 10px; }
+      .contenedor-skills article div .skill svg .skill4 {
+        stroke-dasharray: 190px;
+        stroke-dashoffset: 10px; }
+      .contenedor-skills article div .skill svg .skill5,
+      .contenedor-skills article div .skill svg .skill6 {
+        stroke-dasharray: 100px;
+        stroke-dashoffset: 0px; }
   /* Contacto */
   .contenedor-contacto {
     max-width: 100%;
@@ -225,12 +284,8 @@ footer {
     gap: 0;
     justify-content: center;
     align-items: center; }
-  .contacto-form,
-  .contacto-mapa {
-    max-width: 80%;
-    margin: 0.5rem; }
-  input,
-  textarea,
-  label,
-  .select-medio {
-    max-width: 18rem; } }
+    .contenedor-contacto article {
+      max-width: 80%;
+      margin: 0.5rem; }
+      .contenedor-contacto article form {
+        max-width: 18rem; } }

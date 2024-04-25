@@ -16,8 +16,7 @@ body {
     width: 100%;
 
     background: rgb(7, 11, 14);
-    background: linear-gradient(90deg, rgb(9, 10, 19) 0%, rgb(34, 44, 54) 100%);
-
+    background: linear-gradient(90deg, rgba(7, 11, 14, 1) 0%, rgba(53, 58, 64, 1) 100%);
     overflow-x: hidden;
 
     main {
@@ -34,6 +33,11 @@ p {
 
 .btn {
     color: nth($color, 4) !important;
+}
+
+.btn:hover {
+    color: nth($color, 6) !important;
+    transform: scale(1.2);
 }
 
 .pag-titulo {

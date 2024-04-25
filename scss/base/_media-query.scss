@@ -27,17 +27,23 @@
     .contenedor-index {
         @include grids(grid, auto, 1fr, 2rem, center, center);
         padding-top: 2rem;
-    }
 
-    .contenedor-index article span {
-        text-align: center;
-    }
+        article {
+            text-align: center;
 
-    .contenedor-index article img {
-        transition: all;
-        transition-duration: .5s;
-        width: 30rem;
-        height: auto;
+            span {
+                margin: auto;
+                text-align: center;
+            }
+
+            img {
+                margin: auto;
+                transition: all;
+                transition-duration: .5s;
+                width: 30rem;
+                height: auto;
+            }
+        }
     }
 
     /*Skills*/
@@ -45,34 +51,35 @@
         width: auto;
         height: auto;
         padding-bottom: 7rem;
-    }
 
-    .contenedor-skills,
-    .contenedor-skills article {
-        margin: nth($margin, 3);
-        font-size: nth($font-size, 2);
-    }
-
-    .skill {
-        height: 6rem;
-        width: 6rem;
-    }
-
-    .skill2,
-    .skill3 {
-        stroke-dasharray: 230px;
-        stroke-dashoffset: 10px;
-    }
-
-    .skill4 {
-        stroke-dasharray: 250px;
-        stroke-dashoffset: 10px;
-    }
-
-    .skill5,
-    .skill6 {
-        stroke-dasharray: 160px;
-        stroke-dashoffset: 10px;
+        article {
+            margin: nth($margin, 3);
+            font-size: nth($font-size, 2);
+            div {
+                .skill {
+                    height: 6rem;
+                    width: 6rem;
+                    svg {
+                        .skill2,
+                        .skill3 {
+                            stroke-dasharray: 230px;
+                            stroke-dashoffset: 10px;
+                        }
+                    
+                        .skill4 {
+                            stroke-dasharray: 250px;
+                            stroke-dashoffset: 10px;
+                        }
+                    
+                        .skill5,
+                        .skill6 {
+                            stroke-dasharray: 160px;
+                            stroke-dashoffset: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /* Contacto */
@@ -82,25 +89,32 @@
 }
 
 @media (max-width: 695px) {
+
+    /* Navbar */
     nav div a img {
         width: 2rem;
         height: auto;
     }
 
+    /* Inicio */
     .contenedor-index {
         @include grids (grid, auto, 1fr, 2rem, center, center);
         padding-top: 4rem;
-    }
 
-    .contenedor-index article span {
-        text-align: center;
-    }
+        article {
+            margin: auto;
 
-    .contenedor-index article img {
-        transition: all;
-        transition-duration: .5s;
-        width: 20rem;
-        height: auto;
+            span {
+                text-align: center;
+            }
+
+            img {
+                transition: all;
+                transition-duration: .5s;
+                width: 20rem;
+                height: auto;
+            }
+        }
     }
 
     /*Portfolio*/
@@ -111,39 +125,44 @@
 
 @media screen and (min-width: 381px) and (max-width: 575px) {
 
+
     /*Skills*/
     .contenedor-skills {
         width: auto;
         height: auto;
         padding-bottom: 7rem;
-    }
 
-    .contenedor-skills,
-    .contenedor-skills article {
-        margin: nth($margin, 3);
-        font-size: nth($font-size, 1);
-    }
+        .contenedor-skills article {
+            margin: nth($margin, 3);
+            font-size: nth($font-size, 1);
 
-    .skill {
-        height: 5rem;
-        width: 5rem;
-    }
+            div {
+                .skill {
+                    height: 5rem;
+                    width: 5rem;
 
-    .skill2,
-    .skill3 {
-        stroke-dasharray: 200px;
-        stroke-dashoffset: 10px;
-    }
+                    svg {
 
-    .skill4 {
-        stroke-dasharray: 220px;
-        stroke-dashoffset: 10px;
-    }
+                        .skill2,
+                        .skill3 {
+                            stroke-dasharray: 200px;
+                            stroke-dashoffset: 10px;
+                        }
 
-    .skill5,
-    .skill6 {
-        stroke-dasharray: 140px;
-        stroke-dashoffset: 10px;
+                        .skill4 {
+                            stroke-dasharray: 220px;
+                            stroke-dashoffset: 10px;
+                        }
+
+                        .skill5,
+                        .skill6 {
+                            stroke-dasharray: 140px;
+                            stroke-dashoffset: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /* Contacto */
@@ -151,51 +170,64 @@
         width: auto;
         margin: auto;
         @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
-    }
 
-    .contacto-form,
-    .contacto-mapa {
-        max-width: 24rem;
-        margin: nth($margin, 1);
+        .contacto-form,
+        .contacto-mapa {
+            max-width: 24rem;
+            margin: nth($margin, 1);
+        }
     }
 }
 
 @media screen and (max-width: 380px) {
+
+    /* Inicio */
+    .contenedor-index article span h4 {
+        font-size: nth($font-size, 2);
+    }
 
     /*Skills*/
     .contenedor-skills {
         width: auto;
         height: auto;
         padding-bottom: 7rem;
-    }
 
-    .contenedor-skills,
-    .contenedor-skills article {
         margin: nth($margin, 3);
         font-size: nth(font-size, 1);
-    }
 
-    .skill {
-        height: 4rem;
-        width: 4rem;
-    }
+        article {
+            margin: nth($margin, 3);
+            font-size: nth(font-size, 1);
 
+            div {
+                .skill {
+                    svg {
+                        circle {
+                            height: 4rem;
+                            width: 4rem;
+                        }
 
-    .skill2,
-    .skill3 {
-        stroke-dasharray: 180px;
-        stroke-dashoffset: 10px;
-    }
+                        .skill2,
+                        .skill3 {
+                            stroke-dasharray: 180px;
+                            stroke-dashoffset: 10px;
+                        }
 
-    .skill4 {
-        stroke-dasharray: 190px;
-        stroke-dashoffset: 10px;
-    }
+                        .skill4 {
+                            stroke-dasharray: 190px;
+                            stroke-dashoffset: 10px;
+                        }
 
-    .skill5,
-    .skill6 {
-        stroke-dasharray: 100px;
-        stroke-dashoffset: 0px;
+                        .skill5,
+                        .skill6 {
+                            stroke-dasharray: 100px;
+                            stroke-dashoffset: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 
@@ -205,18 +237,15 @@
         height: auto;
         margin: auto;
         @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
-    }
 
-    .contacto-form,
-    .contacto-mapa {
-        max-width: 80%;
-        margin: nth($margin, 1);
-    }
+        article {
+            max-width: 80%;
+            margin: nth($margin, 1);
 
-    input,
-    textarea,
-    label,
-    .select-medio {
-        max-width: 18rem;
+            form {
+                max-width: 18rem;
+            }
+        }
+
     }
 }

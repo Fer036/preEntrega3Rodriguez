@@ -1,0 +1,25 @@
+.contenedor-index {
+    @include grids(grid, 45rem, repeat(2, 2fr), 4rem, center, center);
+
+    article {
+        span {
+            text-align: end;
+            h1 {
+                color: nth($color, 7);
+            }
+            h3 {
+                color: nth($color, 3);
+            }
+            h4 {
+                color: nth($color, 4);
+            }
+        }
+    }
+
+    article {
+        img {
+            width: 35rem;
+            height: auto;
+        }
+    }
+}
