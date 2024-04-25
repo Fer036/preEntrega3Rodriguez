@@ -110,6 +110,7 @@ p {
       position: relative; }
 
 .contenedor-skills {
+  padding-top: .5rem;
   padding-bottom: 7rem;
   margin: 2rem;
   text-align: center; }
@@ -170,9 +171,13 @@ p {
           stroke-dashoffset: 300px; }
 
 .contenedor-portfolio {
+  padding-top: .8rem;
   padding-bottom: 7rem; }
   .contenedor-portfolio div .card {
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
+
+.box-titulo {
+  margin: 2rem; }
 
 .contenedor-contacto {
   display: grid;
@@ -184,6 +189,7 @@ p {
   width: 70%;
   height: auto;
   padding-bottom: 7rem;
+  padding-top: 1rem;
   margin: auto; }
   .contenedor-contacto div {
     margin: 1rem; }

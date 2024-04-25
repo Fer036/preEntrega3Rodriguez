@@ -1,8 +1,13 @@
+.box-titulo {
+    margin: 2rem;
+}
+
 .contenedor-contacto {
     @include grids(grid, auto, repeat(2,1fr), 1rem, center, center);
     width: 70%;
     height: auto;
     padding-bottom: 7rem;
+    padding-top: 1rem;
     margin: auto;
 
     div {
