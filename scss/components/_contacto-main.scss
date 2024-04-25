@@ -1,7 +1,7 @@
 .contenedor-contacto {
+    @include grids(grid, auto, repeat(2,1fr), 1rem, center, center);
     width: 70%;
     height: auto;
-    @include grids(grid, auto, repeat(2,1fr), 1rem, center, center);
     padding-bottom: 7rem;
     margin: auto;
 
@@ -13,15 +13,17 @@
         width: 25rem;
         height: fit-content;
         padding: 1rem;
+        margin: auto;
+
         box-shadow: $shadow-1;
         color: nth($color, 6);
         text-align: center;
-        margin: auto;
 
         form {
             label {
                 width: 90%;
                 text-align: center;
+
                 input, .select-contact, textarea {
                     width: 90%;
                     text-align: center;
@@ -45,10 +47,10 @@
     .contacto-mapa {
         width: 25rem;
         height: 25rem;
+        margin: auto;
         box-shadow: $shadow-1;
         text-align: center;
-        margin: auto;
-
+        
         p {
             color: nth($color, 6);
             margin-top: .5rem;

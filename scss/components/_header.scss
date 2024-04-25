@@ -1,7 +1,8 @@
-nav {
+.navbar {
     background-color: nth($color, 2);
     @extend%font-bebas;
     font-size: nth($font-size, 3);
+
     div {
         a {
             img {

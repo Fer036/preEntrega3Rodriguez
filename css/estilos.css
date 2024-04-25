@@ -4,7 +4,13 @@
 /* Tipo de fuente (extend) */
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap rel="stylesheet');
-nav, footer {
+body main {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; }
+
+.navbar, footer {
   font-family: "Bebas Neue", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -24,16 +30,11 @@ nav, footer {
   box-sizing: border-box; }
 
 body {
-  height: 98vh;
+  height: 96vh;
   width: 100%;
   background: #070b0e;
   background: linear-gradient(90deg, #070b0e 0%, #353a40 100%);
   overflow-x: hidden; }
-  body main {
-    font-family: "Tilt Neon", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; }
 
 p {
   text-align: justify; }
@@ -49,18 +50,18 @@ p {
   color: #a68868;
   text-align: center; }
 
-nav {
+.navbar {
   background-color: #353A40;
   font-size: 1.3rem; }
-  nav div a img {
+  .navbar div a img {
     width: 3rem;
     height: auto; }
-  nav div div ul li {
+  .navbar div div ul li {
     width: 7rem;
     height: auto; }
-    nav div div ul li a {
+    .navbar div div ul li a {
       color: #B9BDC0 !important; }
-      nav div div ul li a:hover {
+      .navbar div div ul li a:hover {
         color: #e3c39d !important; }
 
 .contenedor-index {
@@ -104,9 +105,9 @@ nav {
     margin: 2rem;
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
     .sobre-mi .sobre-mi-img article img {
-      position: relative;
       max-width: 18rem;
-      height: auto; }
+      height: auto;
+      position: relative; }
 
 .contenedor-skills {
   padding-bottom: 7rem;
@@ -174,14 +175,14 @@ nav {
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
 
 .contenedor-contacto {
-  width: 70%;
-  height: auto;
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  height: auto;
   padding-bottom: 7rem;
   margin: auto; }
   .contenedor-contacto div {
@@ -190,10 +191,10 @@ nav {
     width: 25rem;
     height: fit-content;
     padding: 1rem;
+    margin: auto;
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c;
     color: #e3c39d;
-    text-align: center;
-    margin: auto; }
+    text-align: center; }
     .contenedor-contacto .contacto-form form label {
       width: 90%;
       text-align: center; }
@@ -213,9 +214,9 @@ nav {
   .contenedor-contacto .contacto-mapa {
     width: 25rem;
     height: 25rem;
+    margin: auto;
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c;
-    text-align: center;
-    margin: auto; }
+    text-align: center; }
     .contenedor-contacto .contacto-mapa p {
       color: #e3c39d;
       margin-top: .5rem;
@@ -226,10 +227,10 @@ nav {
       margin: auto; }
 
 footer {
+  width: 100%;
   background-color: #353A40;
   font-size: 1.3rem;
   position: fixed;
-  width: 100%;
   bottom: 0; }
 
 @media screen and (max-width: 992px) {
@@ -262,11 +263,11 @@ footer {
         margin: auto;
         text-align: center; }
       .contenedor-index article img {
+        width: 30rem;
+        height: auto;
         margin: auto;
         transition: all;
-        transition-duration: .5s;
-        width: 30rem;
-        height: auto; }
+        transition-duration: .5s; }
   /*Skills*/
   .contenedor-skills {
     width: auto;
@@ -298,14 +299,17 @@ footer {
     justify-content: center;
     align-items: center;
     margin: auto; }
-    .contenedor-contacto .contacto-form, .contenedor-contacto .contacto-mapa {
+    .contenedor-contacto .contacto-form,
+    .contenedor-contacto .contacto-mapa {
       margin: auto; } }
 
 @media (max-width: 695px) {
   /* Navbar */
   nav div a img {
     width: 2rem;
-    height: auto; }
+    height: auto;
+    transition: all;
+    transition-duration: .2s; }
   /* Inicio */
   .contenedor-index {
     display: grid;
@@ -320,10 +324,10 @@ footer {
       .contenedor-index article span {
         text-align: center; }
       .contenedor-index article img {
-        transition: all;
-        transition-duration: .5s;
         width: 20rem;
-        height: auto; } }
+        height: auto;
+        transition: all;
+        transition-duration: .5s; } }
 
 @media screen and (min-width: 381px) and (max-width: 575px) {
   /*Skills*/
@@ -331,21 +335,21 @@ footer {
     width: auto;
     height: auto;
     padding-bottom: 7rem; }
-    .contenedor-skills .contenedor-skills article {
+    .contenedor-skills article {
       margin: 2rem;
       font-size: 0.7rem; }
-      .contenedor-skills .contenedor-skills article div .skill {
+      .contenedor-skills article div .skill {
         height: 5rem;
         width: 5rem; }
-        .contenedor-skills .contenedor-skills article div .skill svg .skill2,
-        .contenedor-skills .contenedor-skills article div .skill svg .skill3 {
+        .contenedor-skills article div .skill svg .skill2,
+        .contenedor-skills article div .skill svg .skill3 {
           stroke-dasharray: 200px;
           stroke-dashoffset: 10px; }
-        .contenedor-skills .contenedor-skills article div .skill svg .skill4 {
+        .contenedor-skills article div .skill svg .skill4 {
           stroke-dasharray: 220px;
           stroke-dashoffset: 10px; }
-        .contenedor-skills .contenedor-skills article div .skill svg .skill5,
-        .contenedor-skills .contenedor-skills article div .skill svg .skill6 {
+        .contenedor-skills article div .skill svg .skill5,
+        .contenedor-skills article div .skill svg .skill6 {
           stroke-dasharray: 140px;
           stroke-dashoffset: 10px; }
   /* Contacto */
@@ -358,7 +362,8 @@ footer {
     gap: 0;
     justify-content: center;
     align-items: center; }
-    .contenedor-contacto .contacto-form, .contenedor-contacto .contacto-mapa {
+    .contenedor-contacto .contacto-form,
+    .contenedor-contacto .contacto-mapa {
       max-width: 80%;
       margin: auto; } }
 

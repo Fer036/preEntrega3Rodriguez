@@ -37,11 +37,12 @@
             }
 
             img {
-                margin: auto;
-                transition: all;
-                transition-duration: .5s;
                 width: 30rem;
                 height: auto;
+                margin: auto;
+                
+                transition: all;
+                transition-duration: .5s;
             }
         }
     }
@@ -55,22 +56,25 @@
         article {
             margin: nth($margin, 3);
             font-size: nth($font-size, 2);
+
             div {
                 .skill {
                     height: 6rem;
                     width: 6rem;
+
                     svg {
+
                         .skill2,
                         .skill3 {
                             stroke-dasharray: 230px;
                             stroke-dashoffset: 10px;
                         }
-                    
+
                         .skill4 {
                             stroke-dasharray: 250px;
                             stroke-dashoffset: 10px;
                         }
-                    
+
                         .skill5,
                         .skill6 {
                             stroke-dasharray: 160px;
@@ -87,7 +91,8 @@
         @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
         margin: auto;
 
-        .contacto-form, .contacto-mapa {
+        .contacto-form,
+        .contacto-mapa {
             margin: auto;
         }
     }
@@ -99,6 +104,9 @@
     nav div a img {
         width: 2rem;
         height: auto;
+
+        transition: all;
+        transition-duration: .2s;
     }
 
     /* Inicio */
@@ -114,10 +122,10 @@
             }
 
             img {
-                transition: all;
-                transition-duration: .5s;
                 width: 20rem;
                 height: auto;
+                transition: all;
+                transition-duration: .5s;
             }
         }
     }
@@ -131,7 +139,7 @@
         height: auto;
         padding-bottom: 7rem;
 
-        .contenedor-skills article {
+        article {
             margin: nth($margin, 3);
             font-size: nth($font-size, 1);
 
@@ -190,7 +198,6 @@
         width: auto;
         height: auto;
         padding-bottom: 7rem;
-
         margin: nth($margin, 3);
         font-size: nth(font-size, 1);
 
@@ -228,7 +235,6 @@
         }
 
     }
-
 
     /* Contacto */
     .contenedor-contacto {
