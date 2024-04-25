@@ -3,6 +3,8 @@ footer {
     background-color: nth($color, 2);
     @extend%font-bebas;
     font-size: nth($font-size, 3);
-    position: static;
+    position: fixed;
     bottom: 0;
+
+    z-index: 3;
 }
