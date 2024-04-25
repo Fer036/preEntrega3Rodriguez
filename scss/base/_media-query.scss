@@ -84,7 +84,12 @@
 
     /* Contacto */
     .contenedor-contacto {
-        @include grids(grid, 1fr 1fr, 1fr, 0, center, center)
+        @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
+        margin: auto;
+
+        .contacto-form, .contacto-mapa {
+            margin: auto;
+        }
     }
 }
 
@@ -161,14 +166,14 @@
 
     /* Contacto */
     .contenedor-contacto {
-        width: auto;
+        width: 90%;
         margin: auto;
         @include grids(grid, 1fr 1fr, 1fr, 0, center, center);
 
         .contacto-form,
         .contacto-mapa {
-            max-width: 24rem;
-            margin: nth($margin, 1);
+            max-width: 80%;
+            margin: auto;
         }
     }
 }

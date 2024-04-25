@@ -173,6 +173,58 @@ nav {
   .contenedor-portfolio div .card {
     box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c; }
 
+.contenedor-contacto {
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7rem;
+  margin: auto; }
+  .contenedor-contacto div {
+    margin: 1rem; }
+  .contenedor-contacto .contacto-form {
+    width: 25rem;
+    height: fit-content;
+    padding: 1rem;
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c;
+    color: #e3c39d;
+    text-align: center;
+    margin: auto; }
+    .contenedor-contacto .contacto-form form label {
+      width: 90%;
+      text-align: center; }
+      .contenedor-contacto .contacto-form form label input, .contenedor-contacto .contacto-form form label .select-contact, .contenedor-contacto .contacto-form form label textarea {
+        width: 90%;
+        text-align: center;
+        border-radius: .4rem; }
+    .contenedor-contacto .contacto-form form .boton-cont {
+      width: 10rem;
+      color: #6282a0;
+      background-color: #353A40;
+      border-radius: 0.4rem;
+      font-size: 1rem; }
+      .contenedor-contacto .contacto-form form .boton-cont:hover {
+        color: #e3c39d;
+        background-color: #656C72; }
+  .contenedor-contacto .contacto-mapa {
+    width: 25rem;
+    height: 25rem;
+    box-shadow: -3px -3px 7px #3b3b3b, 3px 3px 5px #0c0c0c;
+    text-align: center;
+    margin: auto; }
+    .contenedor-contacto .contacto-mapa p {
+      color: #e3c39d;
+      margin-top: .5rem;
+      text-align: center; }
+    .contenedor-contacto .contacto-mapa iframe {
+      width: 80%;
+      height: 80%;
+      margin: auto; }
+
 footer {
   background-color: #353A40;
   font-size: 1.3rem;
@@ -244,7 +296,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 0;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    margin: auto; }
+    .contenedor-contacto .contacto-form, .contenedor-contacto .contacto-mapa {
+      margin: auto; } }
 
 @media (max-width: 695px) {
   /* Navbar */
@@ -295,7 +350,7 @@ footer {
           stroke-dashoffset: 10px; }
   /* Contacto */
   .contenedor-contacto {
-    width: auto;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-auto-rows: 1fr 1fr;
@@ -303,10 +358,9 @@ footer {
     gap: 0;
     justify-content: center;
     align-items: center; }
-    .contenedor-contacto .contacto-form,
-    .contenedor-contacto .contacto-mapa {
-      max-width: 24rem;
-      margin: 0.5rem; } }
+    .contenedor-contacto .contacto-form, .contenedor-contacto .contacto-mapa {
+      max-width: 80%;
+      margin: auto; } }
 
 @media screen and (max-width: 380px) {
   /* Inicio */
